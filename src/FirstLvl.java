@@ -7,15 +7,16 @@ public class FirstLvl {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter the number: ");
         int number = scanner.nextInt();
         int result;
 
-        if (number > 1) { //провека что заданное число не меньше 2
+        if (number > 1) {
             for (int i = 2; i < Integer.MAX_VALUE; i++) {
 
                 result = number % i;
                 if (result == 0) {
-                    System.out.println(i);
+                    System.out.println("Smallest divisor: " + i);
                     break;
                 }
             }
