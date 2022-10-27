@@ -12,7 +12,7 @@ public class SecondLvl {
         double deposit = scanner.nextInt();
 
         System.out.print("How many years passed: ");
-        double years = scanner.nextInt();
+        double years = scanner.nextDouble();
 
         for (int i = 1; i <= years; i++) {
 
